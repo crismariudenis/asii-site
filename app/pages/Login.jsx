@@ -18,7 +18,6 @@ const Login = () => {
   }, [username, password]);
   return (
     <>
-      <h1>Here is the {username}</h1>
       <div className="flex justify-center items-center h-screen">
         <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-96">
           <div className="mb-4">
