@@ -14,12 +14,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="max-w-3xl mx-auto p-4">
-          {/* <Navbar /> */}
-
-          {children}
-          <CardList/>
-        </div>
+        <header>
+          <Navbar/>
+        </header>
+        <main>
+          <div className="max-w-3xl mx-auto p-4">
+            {children}
+            <CardList/>
+          </div>
+        </main>
+        <footer></footer>
       </body>
     </html>
   );

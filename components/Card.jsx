@@ -13,8 +13,11 @@ export default function Card({ name }) {
   ];
   return (
     <>
-      <div className="p-4 border border-slate-300 gap-5 my-3">
-        <h3 className="text-lg">{name}</h3>
+      <div className="p-4 border border-slate-300 rounded-xl shadow-black shadow-lg gap-5 my-4 hover:scale-105 transition-all duration-200">
+        <div className="flex items-center">
+          <img class="w-16 h-16 relative -left-12 rounded-full border" src="https://i.pinimg.com/originals/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg"></img>
+          <h3 className="w-full text-lg text-center bg-slate-600 rounded-lg">{name}</h3>
+        </div>
         <div className="">
           <input
             type="checkbox"
